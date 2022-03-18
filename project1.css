@@ -1,0 +1,144 @@
+html {
+    background-color: DodgerBlue;
+}
+
+h1 {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid lavender;
+    border-radius: 10px;
+    background-color: lavender;
+    padding: 10px;
+    text-shadow: 4px 3px 1px #fff, 9px 8px 3px rgba(83, 138, 198, 0.2);
+    font-size: 40px;
+    margin: 20px;
+}
+
+h2 {
+    font-family: Montserrat, "Monotype Corsiva";
+    margin-left: -46px;
+}
+
+p {
+    font-size: 22px;
+    text-align: justify;
+    margin: 50px;
+    font-family: Montserrat, "Monotype Corsiva";
+}
+
+ul {
+    margin: 40px;
+    font-size: 20px;
+    font-family: Montserrat, "Monotype Corsiva";
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 350px;
+}
+
+button {
+    margin-left: 35%;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Verdana;
+    font-weight: bold;
+    background-color: DodgerBlue;
+    border-color: DodgerBlue;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+    width: 40%;
+    font-size: 26px;
+    font-family: Montserrat, "Monotype Corsiva";
+}
+
+video {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
+    margin: 50px;
+    font-family: Montserrat, "Monotype Corsiva";
+}
+
+iframe {
+    width: 90%;
+    height: 100%;
+    border: 2px solid blue;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.content {
+    border: 3px solid lavender;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: lavender;
+}
+
+.formula {
+    border: 1px solid DodgerBlue;
+    border-radius: 15px;
+    padding: 10px;
+    display: table;
+    text-align: center;
+    margin: 15px auto;
+    background-color: DodgerBlue;
+}
+
+.animation {
+    display: flex;
+    margin-left: 100px;
+}
+
+.animation-input {
+    margin-left: 20%;
+}
+
+#doc {
+    display: none;
+    width: 90%;
+    height: 600px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#spring {
+    border: 3px solid DodgerBlue;
+    height: 500px;
+    width: 330px;
+    border-radius: 15px;
+    margin-left: 10%;
+}
+
+#changes {
+    margin-top: 100px;
+    margin-left: 100px;
+    border: 3px solid DodgerBlue;
+    height: 330px;
+    width: 350px;
+    border-radius: 15px;
+    align-items: center;  
+}
+
+#image_d {
+    text-align: center;
+}

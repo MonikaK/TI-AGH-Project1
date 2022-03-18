@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="project1.css">
+        <title>Projekt 1 - Ruch harmoniczny</title>
+        <link rel="icon" href="spring.png">
+    </head>
+    <body>
+        <header>
+            <h1>Ruch harmoniczny</h1>
+            <nav>
+                <table><tr><td><a href="#springDesc">Animacja</a></td><td><a href="#doc" onclick="css();">Dokumentacja</a></td></tr></table>
+            </nav>
+        </header>
+        <div id="doc">
+            <iframe src="Dokumentacja.pdf"></iframe>
+        </div>
+        <div class="content">
+            <div>
+                <p><b>Ruch harmoniczny</b> to ruch drgający, w którym na ciało działa siła o wartości proporcjonalnej do wychylenia ciałą z jego położenia  równowagi, skierowana zawsze w stronę punktu równowagi. Przykładem może być ciężarek zawieszony na sprężynie.<br>Ciało porusza się ruchem harmonicznym prostym, jeżeli działa na nie siła, skierowana w stronę położenia równowagi, o wartości proporcjonalnej do wychylenia ciała, co opisuje następujący wzór (przy założeniu, że ruch układu odbywa się w jednym wymiarze):</p>
+                <p class="formula">F = -kx</p>
+                <p>gdzie:</p>
+                <ul>
+                    <li>F - współrzędna wektora siły,</li>
+                    <li>k - współczynnik proporcjonalności (zwany stałą sprężystości),</li>
+                    <li>x - współrzędna wektora wychylenia ciała od położenia równowagi.</li>
+                </ul>
+                <p><b>Okres drgań harmonicznych</b> to czas, jaki jest potrzebny do zakończenia jednego pełnego cykly drgania harmonicznego. Jest on dany wzorem:
+                </p>
+                <p class="formula">T = 2&#960;/&#969;</p>
+                <p><b>Wychylenie</b> w ruchu harmonicznym zmienia się zgodnie z regułą:</p>
+                <p class="formula">x(t) = Acos(&#969;t+&#966;)</p>
+                <p>gdzie:</p>
+                <ul>
+                    <li>A - amplituda drgań (największe wychylenie z położenia równowagi),</li>
+                    <li>&#969; = 2&#960;/T - częstotliwość kątowa drgań, pulsacja,</li>
+                    <li>&#969;t+&#966; - faza drgań.</li>
+                </ul>
+                <p>Wykres zależności wychylenia od czasu w ruchu harmonicznym został zaprezentowany poniżej.</p>
+                <img src="graph.jpg" alt="Wykres">
+                <p id="image_d">Rys.1. Wykres położenia ciała <i>x</i> w funkcji czasu <i>t</i>.</p>
+                <p>Wzory na prędkość oraz przyspieszenie ciała w ruchu harmonicznym można wyznaczyć na podstawie kolejno pierwszej i drugiej pochodnej przemieszczenia względem czasu:</p>
+                <p class="formula">v(t) = dx/dt = d/dt * (Acos(&#969;t+&#966;)) = -A&#969;sin(&#969;t+&#966;) = -v<sub>max</sub>sin(&#969;t+&#966;)</p>
+                <p class="formula">a(t) = dv/dt = d/dt * (-A&#969;sin(&#969;t+&#966;)) = -A&#969;&sup2;cos(&#969;t+&#966;) = -a<sub>max</sub>cos(&#969;t+&#966;)</p>
+                <p>Ze względu na dziedzinę funkcji sinus [-1,1], prędkość maksymalna jest iloczynem amplitudy i częstości kołowej (<i>v<sub>max</sub>=A&#969;</i>). Występuje ona w momencie przejścia ciała przez położenie równowagi <i>x=0</i>. Natomiast maksymalne przyspieszenie ciało osiąga w punkcie wychylenia <i>x=-A</i> i wynosi <i>a<sub>max</sub>=A&#969;&sup2;</i>.</p>
+                <p id="springDesc">Poniżej przedstawiona została symulacja ruchu harmonicznego na przykładzie klocka zawieszonego na sprężynie. Możliwa jest zmiana jego masy oraz współczynnika sprężystości.</p>
+            </div>
+            <article class="animation">
+                <h2>Symulacja</h2>
+                <div id="spring">
+                    <canvas class="animation-canvas"></canvas>
+                </div>
+                <div id="changes">  
+                    <button id="startButton" name="startButton" onclick="toggleSimulation()">START</button>
+                    <p>Masa ciężarka<br>
+                        <input class="animation-input" type="number" id="animation-mass" min="1" max="10000" step="1">
+                    </p>  
+                    <p>Współczynnik sprężystości<br>
+                        <input class="animation-input" type="number" id="animation-springConstant" name="springConstant" min="1" max="10000" step="1">
+                    </p>
+                </div>
+            </article>
+            <div>
+                <p>Na poniższym filmie połączono symulację omawianego ruchu z wykresami zależności przemieszczenia, prędkości oraz przyspieszenia od czasu.</p>
+                <video controls>
+                    <source src="simulation.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <footer>Autor: Monika Kidawska</footer>
+        <script src="project1.js"></script>
+    </body>
+</html>
